@@ -37,42 +37,26 @@
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!-- Swiper JS CSS -->
-  <link rel="stylesheet" href="./styles/swiper.min.css">
   <!-- Custom styles for this template -->
   <link href="./styles/midboss.css" rel="stylesheet">
 </head>
-
 <body>
+<div class=master>
 
+<header>
+<div class="header-neurodiver">
+	<ul id="scene" class="header-background" data-origin-y="1.0">
+  	<li class="layer header-pink" data-depth="0.010"></li>
+  	<li class="layer header-frame" data-depth="0.015"></li>
+    <li class="layer header-gate" data-depth="0.020"></li>
+  	<li class="layer header-es88" data-depth="0.025"></li>
+  	<li class="layer header-logo" data-depth="0.035"></li>
+	</ul>
+</div>
+</header>
 
-
-  <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
-      <div class="container">
-        <a class="navbar-brand d-sm-none" href="#"><img src="./imgs/NeurodiverLogo_Small.svg" alt="Midboss Logo" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse nav justify-content-center" id="mainNav">
-          <ul class="navbar-nav ml-auto" id="navbar-list">
-            <li class="nav-item">
-              <a class="navbar-brand d-none d-sm-block" href="https://midboss.com/"><img src="./imgs/MidBoss.svg" alt="Midboss Logo" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  </nav>
-
-  <main role="main">
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <img class="d-none d-sm-block" src="./imgs/Neurodiver88_Banner.png" alt="Read Only Memories: NEURODIVER" />
-        <img class="d-sm-none" src="./imgs/Neurodiver88_Banner.png" alt="Read Only Memories: NEURODIVER" />
-    </div>
-
-    <div id="main-content">
+<main role="main">
+			<div id="main-content">
       <!-- Add padding-top below when not using the slider -->
       <div class="container padding-top">
         <div class="row">
@@ -81,7 +65,8 @@
              <div align="center" class="videoWrapper"><iframe height="576" width="1024" src="https://www.youtube.com/embed/Q8e-XeA40KA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
              &nbsp;
               <div align="center" class="steam"><iframe src="https://store.steampowered.com/widget/1293910/" frameborder="0" width="646" height="190"></iframe></div>
-            <h2>Read Only Memories: NEURODIVER<img src="imgs/88_3.png" class="eightyeight float-right"></h2>
+
+            <h2 class="baffle">Read Only Memories: NEURODIVER<img src="imgs/88_3.png" class="eightyeight float-right"></h2>
             <p>Take on the role of a gifted esper, ES88, and hunt down the Golden Butterfly, a powerful rogue telepath who's hidden themselves away in the memories of the citizens of Neo-San Francisco.</p>
 
             <p>With the help of the genetically engineered psionic creature known as the Neurodiver, ES88 will dive into the memories and take on the roles of some familiar faces to the series, including Jess Meas, the gene-spliced, hybrid lawyer, TOMCAT, the notorious hacker, and Lexi Rivers, former police officer turned private eye.</p>
@@ -91,7 +76,7 @@
             <!-- Begin Signup Form -->
               <div id="signup">
                 <form action="https://sendy.midboss.com/subscribe" method="POST" accept-charset="utf-8">
-                  <label for="EMAIL"><h2>Join Our MidBoss Email List</h2></label>
+                  <label for="EMAIL"><h2 class="baffle">Join Our MidBoss Email List</h2></label>
                   <input type="email" placeholder="email address" name="email" class="email" id="email" required/>
                   <div style="display:none;">
                     <label for="GAME_Neurodiver">GAME_Neurodiver</label><br/>
@@ -110,7 +95,8 @@
       </div>
   </main>
 
-  <footer>
+<div id="footerimg"><img src="./imgs/footer.png" class="img-fluid"></div>
+<footer>
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12">
@@ -135,17 +121,27 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="./scripts/swiper.min.js"></script>
   <script src="./scripts/midboss.js"></script>
-  <script>
-  const video = document.getElementById('video');
-  video.onended = (event) => {
-    document.getElementById('introvid').style.display = 'none'}
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./scripts/jquery.parallax.min.js"></script>
+    <script src="./scripts/baffle.min.js"></script>
+<script>
+$(function(){
+  $('#scene').parallax({clipRelativeInput:true,relativeInput:true,scalarY:10});
+});
+</script>
 
-  <script>
+<script>
+$(function(){
+  $('#main').baffle(".header-headline",{characters:s}).start().reveal(1500,2500);
+});
+</script>
+
+<script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
+
+<script src="https://raw.githubusercontent.com/camwiegert/baffle/master/dist/baffle.min.js"></script>
 
 
 </body>

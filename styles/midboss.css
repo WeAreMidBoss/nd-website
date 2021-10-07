@@ -12,23 +12,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 ::-moz-selection {
-  background: #e195bf
+  background: #b9ccd5
 }
 
 ::-ms-selection {
-  background: #e195bf
+  background: #b9ccd5
 }
 
 ::-o-selection {
-  background: #e195bf
+  background: #b9ccd5
 }
 
 ::-webkit-selection {
-  background: #e195bf
+  background: #b9ccd5
 }
 
 ::selection {
-  background: #e195bf
+  background: #b9ccd5
 }
 
 * {
@@ -47,11 +47,19 @@
   font-size: 18px
 }
 
+body, html{
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+}
+
 h1,
 h2, .navbar li {
     font-family: 'BebasNeue';
     font-weight: normal;
     font-size: 2rem;
+    color: #ef4474
 }
 
 h1,
@@ -66,6 +74,12 @@ h3 {
     font-weight: normal;
     font-size: 1.8rem;
     margin-bottom: .5rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 2.5em;
 }
 
 h2 {
@@ -84,12 +98,12 @@ a:focus {
 }
 
 main a {
-    color: #e195bf
+    color: #ef4474
 }
 
 main a:hover,
 main a:focus {
-    color: #C279AA;
+    color: #eb1450;
     text-decoration: none;
 }
 
@@ -98,30 +112,21 @@ html, body {
   height: 100%;
 }
 body {
-  background: #2f262f;
+  background: #fff;
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
+  color: #000;
   line-height: 1.5;
   margin: 0;
   padding: 0;
 }
 .jumbotron {
-  background: #2f262f;
-  padding: 0!important;
+  background: #fff;
+  padding: 0;
   margin-bottom: 0;
-  margin-top: -7  0px;
-}
-.jumbotron img {
-  width:100%;
-  height: auto;
+  border-bottom: solid 2px #666;
 }
 #main-content {
-  background: #2f262f; /* Old browsers */
-  background: -moz-linear-gradient(top, #2f262f 0%, #2f262f 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #2f262f 0%,#2f262f 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #2f262f 0%,#2f262f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f262f', endColorstr='#2f262f',GradientType=0 ); /* IE6-9 */
-  padding: 2.5em 0 7em;
+  padding: 2em 0 1em;
 }
 .padding-top {
   padding-top: 3em;
@@ -144,11 +149,12 @@ body {
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
   color: #e195bf
 }
+
 footer {
-  background: #201a20;
-  border-top: solid 2px #4d444d;
+  background: #000;
+  color: #fff;
   padding: 2.5em 0em 0.8em;
-  font-size: 0.7em;
+  font-size: 0.75em;
   line-height: 1.5;
 }
 footer .social-links {
@@ -162,6 +168,8 @@ footer .social-links a img {
 footer .social-links a:last-child img {
   margin-right: 0;
 }
+
+
 .swiper-container {
   width: 100%;
   height:auto !important;
@@ -170,7 +178,7 @@ footer .social-links a:last-child img {
   height:auto !important;
   text-align: center;
   font-size: 18px;
-  background: #000;
+  background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,11 +224,17 @@ footer .social-links a:last-child img {
   padding-bottom: 15px;
 }
 
+.merch{
+    font-family: 'BebasNeue';
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
 @media (min-width: 576px) {
   .navbar {
-    background: -moz-linear-gradient(top, rgba(32,26,32,0.65) 0%, rgba(0,0,0,0) 100%)!important; /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(32,26,32,0.65) 0%,rgba(0,0,0,0) 100%)!important; /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(32,26,32,100) 0%,rgba(0,0,0,0) 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%)!important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)!important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 )!important; /* IE6-9 */
     position: absolute;
     top: 0;
@@ -286,9 +300,9 @@ footer .social-links a:last-child img {
 #signup input.email {font-family:"Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; font-size: 15px; border: 1px solid #ABB0B2;  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color: #343434; background-color: #fff; box-sizing:border-box; height:32px; padding: 0px 0.4em; display: inline-block; margin: 0; width:350px; vertical-align:top;}
 #signup input.email { width: 200px;}
 #signup .button {font-size: 15px; border: none; -webkit-border-radius: 3px; -moz-border-radius: 3px;
-  border-radius: 3px; letter-spacing: .03em; color: #fff; background-color: #f05a83; box-sizing:border-box;
+  border-radius: 3px; letter-spacing: .03em; color: #fff; background-color: #444; box-sizing:border-box;
   height:32px; line-height:32px; padding:0 18px; display: inline-block; margin: 0; transition: all 0.23s ease-in-out 0s; }
-#signup .button:hover {background-color:#f27396; cursor:pointer;}
+#signup .button:hover {background-color:#777; cursor:pointer;}
 #signup label {display:block; font-family: 'BebasNeue'; padding-bottom:0; }
 
 .card {
@@ -341,34 +355,126 @@ fieldset[disabled] .btn-pink.active {
   background-color: #ffffff;
 }
 
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-.videoWrapper iframe {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 5px solid #ffffff;
+.mediainfo {
+  color: #aaa;
+  font-size: .9em;
+
 }
 
-#introvid {
-  display: block;
-  width: 100%;
-  height: 100%;
+/* Mailing List Sign Up Form*/
+#signup h2 {
+color: #ef4474;
+margin-bottom: -8px;
+}
+#signup form {text-align:center; padding:10px 0 10px 0; margin-bottom:40px;}
+#signup input.email {font-family:"Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; font-size: 15px; border: 1px solid #ABB0B2;  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color: #343434; background-color: #fff; box-sizing:border-box; height:32px; padding: 0px 0.4em; display: inline-block; margin: 0; width:350px; vertical-align:top;}
+#signup input.email { width: 200px;}
+#signup .button {font-size: 15px; border: none; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+  border-radius: 3px; letter-spacing: .03em; color: #fff; background-color: #f37296; box-sizing:border-box;
+  height:32px; line-height:32px; padding:0 18px; display: inline-block; margin: 0; transition: all 0.23s ease-in-out 0s; }
+#signup .button:hover {background-color:#eb1450; cursor:pointer;}
+#signup label {display:block; font-family: 'BebasNeue'; padding-bottom:0; }
+
+
+.header-neurodiver{
+  width:100%;
+  height:55.0vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-background{
+  width:100%;
+  height:100%;
+  background-image:url("./../imgs/pink.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.header-logo{
+  width:100%;
+  height:100%;
+  background-image:url("./../imgs/logo.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  left: -10px!important;
+}
+
+.header-frame{
+  width:100%;
+  height:100%;
+  background-image:url("./../imgs/frame.png");
   position: absolute;
-  z-index: 10000;
-  background-color: #2f262f;
-  overflow:hidden;
+  background-repeat:no-repeat;
+  background-size:contain;
 }
 
-#eightyeight {
-  padding:20px;
+.header-es88{
+  width:100%;
+  height:100%;
+  background-image:url("./../imgs/es88.png");
+  position: absolute;
+  background-repeat:no-repeat;
+  background-size:contain;
 }
 
-.steam{
-  margin:50px 0 50px 0;
+.header-gate{
+  width:100%;
+  height:100%;
+  background-image:url("./../imgs/gate.png");
+  position: absolute;
+  background-repeat:no-repeat;
+  background-size:contain;
+}
+
+.header-neurodiver ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.header-neurodiver li{
+  margin:0;
+  padding:0;
+}
+
+#footerimg {
+  display: none;
+  /*
+    width: 100%;*/
+}
+
+.header-compact{
+background: url("./../imgs/headerpattern.png") repeat-x;
+background-position: bottom left;
+margin-bottom: 2em;
+}
+
+.inner-header{
+background: url("./../imgs/smallheader5.png");
+background-position: bottom left;
+background-repeat:no-repeat;
+text-align: center;
+height: 100%;
+}
+
+.contestrules h2{
+  text-align: center;
+}
+
+.contestrules ol > li::marker{
+  font-weight: bold;
+  color: #962f6b;
+}
+
+.contestrules li{
+  padding: 20px 0 20px 0;
+}
+
+header {
+  margin-bottom: -70px;
+}
+
+.steamwidget {
+  padding: 20px 0 20px 0;
 }
