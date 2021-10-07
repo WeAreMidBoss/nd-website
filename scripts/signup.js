@@ -34,7 +34,7 @@ $(document).ready(function() {
 		      	{
 			      	$("#status").text("You're subscribed!");
 			      	$("#status").css("color", "green");
-			      	window.location.replace("http://romcomics.io/contest2021entered/");
+			      	window.location.replace("https://neurodiver.io/egx_downloads/");
 		      	}
 		      }
 		      else
