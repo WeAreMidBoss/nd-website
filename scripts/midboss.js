@@ -1,22 +1,3 @@
-/* Swiper INIT */
-var swiper = new Swiper('.swiper-container', {
-  spaceBetween: 0,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-
 $(window).bind("load", function() { 
 
   function checkIfMobile(width) {
