@@ -460,6 +460,15 @@ margin-bottom: -8px;
   left: -10px!important;
 }
 
+.header-logocbg{
+  width:100%;
+  height:100%;
+  background-image:url("./../imgs/logocbg.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  left: -10px!important;
+}
+
 .header-es88c{
   width:100%;
   height:100%;
@@ -558,6 +567,10 @@ header {
 }
 
 @media (max-width: 500px) {
+
+  .steamwidget {
+  width: 100%;}
+
   .steamwidget iframe{
   width: 100%;}
   }
