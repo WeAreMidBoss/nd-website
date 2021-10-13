@@ -29,12 +29,13 @@ $(document).ready(function() {
 		      	{
 			      	$("#status").text("You're already subscribed!");
 			      	$("#status").css("color", "red");
+			      	window.location.replace("https://neurodiver.io/downloads/");
 		      	}
 		      	else
 		      	{
 			      	$("#status").text("You're subscribed!");
 			      	$("#status").css("color", "green");
-			      	window.location.replace("https://neurodiver.io/egx_downloads/");
+			      	window.location.replace("https://neurodiver.io/downloads/");
 		      	}
 		      }
 		      else
